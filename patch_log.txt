@@ -1,0 +1,791 @@
+ORWAK – ORTERRA
+
+
+Editeur :
+UNITY 2D URP - 2022.3.10f1
+
+
+Pré-protoype :
+Godot 4.1 C# 
+- [Graph] Design Player 
+- [Graph] Animation Idle – Run – Jump (illustrator)
+- Basic scripts movement in godot with animations
+- History Campagn reflexion/preparation
+- [Graph] Design reflexion/preparation
+- [Graph] Design Levelling TDwemer1 : tilemap asset : [obsolet]
+- [Graph] Thinking about the resolution/dimension of assets/widscreen/player/game
+- Thinking about gameplay mechanism
+
+Version actuelle : Prototype 
+
+0.0.0 : Initial Release
+- [Level] White box collider basic room 1
+- [Graph + Script] Player idle anim + rigidbody/collision (illustrator)
+- [Graph + Script] Player run anim (illustrator)
+- Player ground detection
+- [Graph + Script] Player jump anim (illustrator)
+- Player jump stop mid-air + material friction player
+- Animator jump + idle + run
+- Flip Player
+- Camera Follow Player with Cinemachine
+- Player State Machine Script
+- Player Buffer Jump
+- Player Coyote Time Jump
+- [Graph + Script] Player Double Jump anim (illustrator)
+- [Graph + Script] Player Falling anim (illustrator)
+- Animator jump-falling-double jump-run-idle
+- [Graph + Script] Player Dash anim
+- [Graph] Effect Dash Prefab
+- [Graph] Effect Jump/Ground Prefab
+- [Graph] Player Attack Side anim (illustrator)
+- [Graph] Player Attack Up anim (illustrator)
+- [Graph] Player Attack Down anim (illustrator)
+- [Graph] Effect Attack Side Prefab
+- [Graph] Effect Attack Up Prefab
+- [Graph] Effect Attack Down Prefab
+- Player Attack animation script : side, up, down
+- Player aera attack detection
+- Creating Enemy GameObject and Script
+- Player detection enemy hit
+- Attack script with effect side, up, down
+- Enemy hit recoil system after attack
+- Player hit recoil system when attack (hit recoil side and down)
+- Enemy AI base : child script enemy + move to player and attack player
+- Player Health and Damage base
+- Player Invincible System with Timer after attack
+- [Graph + Script] Player Damage anim (illustrator) + animator
+- [Update] Health Player System Script
+- [Update] FixedUpdate Recoil and Dash
+- [Graph + Script] Effect Hit Particule on Player
+- Slowdown Time on Hit Player
+- [Graph + Script] Effect Blink on Invicible Hit Player
+- [Bug] Recoil value to high in Y and to weak in X
+- [Graph + Script] UI Health Controller Setting
+- UI Canvas
+- Health script with UI
+- Healing Script Mechanic
+- [Graph + Script] Healing anim (illustrator)
+- Mana Script Mechanic with Healing
+- Mana Gain on Hit Enemy system
+- UI Mana Controller Setting + Sprite
+- [Graph] Player Side Spell anim (illustrator)
+- [Graph] Player Up Spell anim (illustrator)
+- [Graph] Player Down Spell anim (illustrator)
+- [Graph] Effect Spell Side Prefab
+- [Graph] Effect Spell Up Prefab
+- [Graph] Effect Spell Down GameObject
+- Spell Side Script 
+- Spell Up Script
+- Spell Down Script
+- Spells Script : detection hit/damage on enemy
+- Spell Script Player Cast : Side 
+- Spell Script Player Cast : Up
+- Spell Script Player Cast : Down
+- [Update] fixes Jump - Quality Textures - Particules Hit - Flip on Dash
+- [Graph] Prepare 1st asset level design graphic for integration
+- Prepare in editor, art hierarchy for paralax layer
+- [Level] White box collider advanced room 1 
+- [Level] Texture Paralax basic + advanced room 1 : MidGround 
+- [Level] Texture Paralax basic + advanced room 1 : BackGround
+- [Level] Texture Paralax basic room 1 : ForeGround
+- [Level] Static Animation basic 1st room
+- [Update] Cinemachine Camera Depth and Z for paralax glitch
+- [Update] Cinemachine Camera composite collider
+- [Level] White box collider basic room 2
+- [Level] White box collider basic room 3
+- [Level] White box collider basic room 4
+- Scene Transition System Script
+- [Update] Scene Transition cutscene with orientation player mouvement
+
+0.0.1 : Advanced Input Controller
+- [Add] New Input Controller plugin : InputPlayer script with singleton
+- [Bug] null ref on Disable() -> load new scene : New Input Controller with singleton destroy
+- [Bug] heal bug script : heal before return in Update()
+- [Bug] null ref on Mana Img Canva prefab -> load new scene : UIManager script singleton
+- [Bug] pb collision player -> load new scene : Transition gameobject no z-index 0
+- [Bug] downball effect no img : midground layer sur img
+
+0.0.2 : Light / Cutscene / Player 3D Graph Anims
+- [Bug] Dash Hit enemy freeze : timer hit before return in Update()
+- [Update] Scene Transition cutscene arrived with jump -> falling animation
+- [Bug] some jump with idle : simplify animator transition between falling-jump-run-idle
+- Fade Transition cutscene system
+- [maj] Update Plugin installed (2023 october)
+- Check URP global material rendering
+- [Level] Light spot effect basic room 1
+- [Graph] spritesheet all animations 2d enemy001 [illustrator] -> [obsolet]
+- Formation to Blender & Process IA 2d graph->3d modeling->3d animation->2d sprite
+- [Graph] modeling 3d [csm->blender] enemy001->anims 3d->2d sprite [process model]
+- [Graph] modeling/texture 2d->3d player [blender]
+- [Graph] modeling/texture/anim 3d enemy Craroc [blender]
+- [Graph] rendering/composing process 3d->2d player [blender]
+- [Graph] mixamo process anim 3d player [blender]
+- [Update] Player idle - run  - jump - fall anim sprites [blender]
+- [Update] add pre_jump effect with new jump anim
+- [Update] Player attack : side  - up – jump side – jump up – jump down anim sprites [blender]
+- [Update] Player damage – healing – spell side / up / down anim sprites [blender]
+- [Add] light neck and transform [Update] with all anims player
+- Formation to After Effect : vfx player sword slash effect sprites [After Effect]
+- [Update] Player Sword Slash Side Effect with particules
+- [Add] the flip transform on the particule gameobject vfx player slash side
+
+0.0.3 : Particle VFX improvement
+- [Update] with the player animation side attack [blender]
+- [Update] with the vfx side attack (particules datas & sprites After Effect & atlas process)
+- [Update] with the script side attack (destroy effect with flip & follow player effect)
+- [Update] Player Sword Slash Up/Down/Jump Side/Jump Up particles vfx [After Effect]
+- [Add] Unity project for VFX assets and tests assets particles with URP conversion 
+- [Update] Player Ground Jump vfx with smoke-dust particles
+- [Bug] URP problems with materials new and old particles vfx
+- [Update] Player Dash particles vfx [After Effect]
+- [Add] particles trails movement vfx with Player Dash
+- [Add] Ground Dust particles vfx with script movement (run & dash remplacement)
+- [Update] with datas velocity (run-jump-dash etc...) and comparaion with other games
+- [Add] the acceleration / deceleration in velocity movement script
+- [Add] the friction [Update] in movement script
+
+0.0.4 : Advanced Velocity
+- [Add] player data object scriptable for movement
+- [Update] the acceleration / deceleration move script & add momentum & air accel/decel rate
+- [Update] the box collider & reorganise player with child empty objects & adjust data move
+- [Update] detect ground script with multiple Raycast (test with OverlapBox too)
+- [Add] Gravity script on Player depending on the situation (run, fall, jump etc...)
+- [Update] Jump script with gravity, acceleration, deceleration and apex
+- [Bug] conflict with delay anim jump, addforce, double-jump, coyote, buffer & cut jump
+- [Bug] animations with jump/double jump->falling->ground when velocity-y to 0
+- [Update] transparence in all Slash player vfx
+- [Update] enemy Craroc with new rendering/composing process [blender]
+
+0.0.5 : Enemys Graph / AI / Anims : craroc, volutus, géorob
+- [Update] attack / hit script with timer collision & cooldown
+- [Bug] multiple attacks by frame to one attack by animation -> list script enemy
+- [Graph] create Craroc anim atlas : idle, turn, walk, death [blender + unity]
+- [Add] EnemyState AI scripts method
+- [Add] idle, walk, flip AI autodetect ground script to Crawler/Craroc
+- [Graph] modeling/texture/bone 3d enemy Volutus [blender]
+- [Graph] create Volutus anim atlas : idle, flight, turn, death, hit [blender + unity]
+- [Add] idle, flight, chase, flip, stun, death AI script to Flyer/Volutus
+- [Add] EnemyState AI -> Anim scripts method
+- [Add] Animator States to Volutus
+- [Update] Change the recoil script method to Player and Enemy
+- [Graph] modeling/texture/bone 3d enemy Géorob [blender]
+- [Graph] create Géorob anim atlas : idle, walk, turn, death, charge, hit [blender + unity]
+- [Add] idle, turn, walk, charge, stun, death AI script to Charger/Georob
+- [Add] Animator States to Georob
+- [Add] Animator States to Craroc
+- [Update] deathAir and deathGround AI enemy scripts/anims
+- [Bug] Georob velocity-x to 0 when turning (bug timer states) + charging with idle 
+
+0.0.6 : Spike / Advanced Cinemachine Camera
+- [Add] spike/damage system script with respawn point & fade effect
+- [Update] CameraManager to cinemachine for multiple camera
+- [Add] Y Damping effect to cinemachine camera when falling
+- [Add] X Bias effect to cinemachine camera when flipping (& improvement with perspective cam)
+- [Update] cinemachine Bound effect with CameraManager and multiple boxs
+- [Add] Pan Direction effect to cinemachine camera with TriggerCamera & CameraManager
+- [Add] Swap Y Camera effect to cinemachine camera with TriggerCamera & CameraManager
+- [Add] fix cameras to cinemachine (boss, secret) with new swap system cam
+- [Add] Swap X Camera effect to cinemachine camera with TriggerCamera & CameraManager
+- [Add] no Y & no X move camera to cinemachine (tight zone) with new swap system cam
+- [Add] Pan Zoom effect to cinemachine camera with TriggerCamera & CameraManager
+
+0.0.7 : CrawlerAround & Ball Script
+- Install Stable Diffusion WebUI with seamless extension
+- [Graph] create 3 tilesets seamless floor with dwemer temple asset
+- [Bug] transition black fade with new scene & awake visibility fade error log
+- [Add] WalkAround AI script to CrawlerAround & [Update] stun/death script with Around
+- [Add] trigger script with Removal/Slow Velocity effect (xaxis, yaxis)
+- [Update] method script to WalkAround AI with Waypoints (more stable)
+- [Update] rotation move script to WalkAround AI (more smooth)
+- [Update] Euler/Quaternion additive rotation script to WalkAround AI (easier to use)
+- [Add] the Ball script collider modifier with sprite IdleBall animator & toggle input with Idle Player
+- [Add] zone Test in white box for test all scripts/modifs
+- [Add] up & down detect Balling condition
+- [Update] with moving and all powers states when Balling
+- [Add] move anim WalkingBall and asjustement sprite with IdleBall
+- [Add] jump script to Ball condition with new jump physic
+
+0.0.8 : White Box Room 2 + Through Platform + Advanced Key/Lever Door System
+- [Level] White box collider advanced room 2 with AI enemys
+- [Add] player through fall platform script with down gamepad and jump up
+- [Bug] enemy Charger AI detection player by through the walls
+- [Bug] balling to player standing through by ceiling when ceiling is dotted
+- [Bug] [Update] collision between enemys & push effect enemy/player collision
+- [Bug] No-Gravity with Dash did no work
+- [Add] system door open script with graph asset and anim door
+- [Add] system key script with door & graph asset key
+- [Add] system lever using script door & graph asset lever & anim lever
+- [Update] close anim & respawn system door with reactivating key & lever
+- [Bug] animate a lever activated all doors
+- [Add] the system increment key loot with display number key in canva UI screen
+- [Bug] increment bug exception and bug display when key start to 0
+- [Bug] increment canva UI key image update with increment key item loot
+- [Update] lever with key, new asset for key & lever, door/lever with multiples keys
+
+0.0.9 : Advanced Level Design Room 2 + Falling Pike + Black Zone
+- [Bug] flickering between fog layer and background objects layers
+- [Add] black secret zone script with fade effect
+- [Add] falling object with detection/damage player/ground with shake effect
+- [Level] Texture Paralax (basic + advanced) room 2 : MidGround 
+- [Level] Texture Paralax (basic + advanced) room 2 : BackGround
+- [Level] Texture Paralax (basic) room 2 : ForeGround
+- [Update] Distinction between Black and Fog layers with Background
+- [Bug] improvement of through platform script and enemy bug with it.
+
+0.0.10 : Falling Platform + Camera Shake + Rumble Gamepad
+- [Add] Falling Platform with shake effect & detection direction collision & reset system
+- [Add] Shake Camera script cinemachine system with scriptables objects
+- [Update] use shake camera for falling platform, hit attack, damage player
+- [Add] Rumble Gamepad Shake system on damage player & falling platform
+- [Update] stop rumble shake pad if you exit platform before end shake platform
+- [Bug] collision between enemys, now flip the enemys
+
+0.0.11 : Death Player System + Ball Improvement + Save Machine + Half Mana Respawn
+- [Graph] create player Dying anim atlas [blender + unity]
+- [Add] Death player script with animator and UI Death Canva when 0 health
+- [Add] basic white box Temple room 3 - 4 - 5 - 6 with transitions 
+- [Update] reorganize gameobject hierarchy with all scenes & add a model scene
+- [Graph] improvement Ball Idle and Walking anim atlas [blender + unity]
+- [Graph] Save Machine static with animation open/close with and without Ball
+- [Add] Respawn button with Death Canva & respawn script position with Save Machine
+- [Bug] problem with EventSystem less in Canvas for button interaction
+- [Add] Half mana respawn system with UI Half Canva 
+- [Bug] GameManager / UIManager interaction when respawn
+
+0.0.12 : Player Shade Respawn + Map System
+- [Bug] cinemachine : switch camera after respawn in save machine
+- [Graph] Basic Player Shade : flying ball player
+- [Add] AI basic Flyer State to Player Shade 
+- [Add] Shade enemy spawn to player death with restore full mana when destroy
+- [Graph] Map Temple2 [photoshop]
+- [Add] Map system on Canva UI
+- [Add] Map keep in current scene with update map on SaveMachine (not saved)
+- [Bug] EventSystem now instantiate dynamically
+
+0.0.13 : SaveMachine Location with Save-Load System
+- [Add] Save System location with SaveMachine & SaveData Management
+- [Add] Respawn system location with Save System in any Scene Loading 
+
+0.0.14 : Player Datas with Save-Load System
+- [Add] Player data saving system (health, mana, position, halfmana)
+- [Add] Load player data when scene quitting, use savemachine and death
+- [Bug] player data loading error when save file is 0 byte (new game)
+0.0.15 : Player Shade with Save-Load System
+- [Bug] default position if respawn and no save machine activated (new game)
+- [Add] Player Shade location & halfmana system with Save/Load system
+- [Bug] savedata logic respawn with shade destroy & savemachine activated
+- [Bug] quit logic savemachine > quit logic default position if savemachine exist
+
+0.0.16 : Maps with Save-Load System (Room 2)
+- [Add] Map System with Save/Load system (Room 2 model map)
+- [Add] The maps are now updates with savemachine and saved if quit game
+- [Bug] prefab interaction between mapmanager & savemachine
+- [Bug] save of the map not update correctly if save file already exist
+- [Bug] first map save if no save file exist before activing savemachine
+
+0.0.17 : Load/SaveMachine Anim + Wall Jump + Skill Unlock Ability with Save-Load System
+- [Add] Load SaveMachine animation after saving & respawn & come back
+- [Bug] interaction savemachine/player - save/load - animator/animation/coroutine
+- [Bug] Health & maxHealth interaction with start initialization
+- [Graph] create player Wall Jump anim atlas [blender + unity]
+- [Add] Wall Jump & Sliding player script with animator & flip care
+- [Bug] change hierarchy of cameras/shake for DontDestroyOnLoad consideration
+- [Add] Skill Unlock ability with save-load system &always Destroy Item system
+- [Bug] no load anim first come in savemachine if it's save of player start
+
+0.0.18 : UI Skills & UI Spells Unlock & Map Room 1
+- [Add] UI Skill new ability for Wall Jump & particle effect with unlock skill item
+- [Add] White Box Room1 (oversight) & integration with UI Map 
+- [Add] UI Skill new ability for Dash & Double Jump with scripts conditions
+- [Add] UI Skill new ability for Spell Side & Spell Up & Spell Down with scripts conditions
+
+0.0.19 : Heart Shards with Save-Load System
+- [Graph] new Heart UI & New Heart Shard Item Progress
+- [Graph] new UI Mana (not finish but better)
+- [Add] Heart Shards System with MaxHealth progress & Save-Load system integration
+- [Add] Canva UI for Heart Shards progress and Destroy Item Save
+- [Add] smooth transition effect with Canva UI heart shard progress
+
+0.0.20 : Sliding Anim + Orbs Mana Shard with Save-Load System
+- [Graph] new UI Half Mana (not finish but better)
+- [Bug] only one cinemachine can be activated in inspector (switch camera bug)
+- [Bug] fix the velocity/gravity after death & change gravity to FixedUpdate
+- [Graph] create player Sliding anim atlas [blender + unity]
+- [Bug] sliding animator parasit frame to the end of the loop (false to Idle)
+- [Graph] title Orterra screen text for the games
+- [Graph] Orb manas and canva integration
+- [Add] Orb Mana system with shards item & Save-Load system integration
+- [Bug] bad order of lines bewteen save and load datas (orbs save but no load)
+
+0.0.21 : Inventory with Save-Load System
+- [Graph] inventory canva with all skills, spells, shards, body icons & misc (simplified version)
+- [Add] inventory is connected to save/load datas player progress system
+- [Add] inventory description windows interactive with inventory icons (lorem ipsum text)
+
+0.0.22 : MainCanva : Main Title & Main Menu & Options Menu (basic)
+- [Graph] new title ORTERRA for the game in différents versions & background main title graph
+- [Graph] background main menus and main menu title (with light & particule effect)
+- [Add] mechanic of main menu button with styles & event system & input improvement script
+- [Add] new police with FontAssetCreator in TextMeshPro. Orterra police for all the game.
+- [Add] mechanic of some options settings (select, cursor, toggle) & credit text
+- [Add] Fade effect between main title, main menu, options & back menu
+- [Add] start game manager with fade effect to scene 1
+- [Bug] null exception with inventory canva in others scenes as TestScene
+
+0.0.23 : Menu Pause : Resume & Go to Main Menu
+- [Add] UI canva for pause menu in game
+- [Add] pause menu system with time scale to 0, reset prefab & GameManager system
+- [Bug] timeScale to 0 stop the UI pauseCanva screen
+- [Bug] change Input PlayerController Pause to GameManager fo synchro with timeScale to 0
+
+0.0.24 : Audio UI & Audio Player Foot Step
+- [Audio] mix 3 sounds for UI hover/click/confirm [Premiere]
+- [Add] UI Audio with Audio mix component for UI Menu and Canva Pause 
+- [Audio] mix 5 player foot steps sounds with stone/metal/grass/water/bone [Premiere]
+- [Bug] assign prefab button pause menu with GameManager (script to auto)
+- [Add] audio foot step detection with ground and physic material surface
+- [Bug] stop the sound foot step sequence if no player movement
+- [Bug] better transition sound foot step (end, begin and material ground transition)
+- [Update] optimisation script code : audio foot step (all rewriting)
+
+0.0.25 : Audio Player (continued) + Ground/Jump Scripts Optimizations
+- [Audio] mix 5 player foot steps sounds with dirt/wood/metal2/metal3 & new stone [Premiere]
+- [Add] assign material physical ground to room 1 and 2
+- [Bug] pState.walking not come back to false in good conditions
+- [Bug] error message on DontDestroyOnload after change hierarchy of UIManager
+- [Bug] audio foot step issue with While Coroutine and Grounded state check
+- [Update] optimisation script code : Grounded, UpBallDetect, Walled
+- [Update] optimisation script code : Jumping System (all rewriting)
+- [Bug] Jump system improvement fix buffer issue & pState.jumping issue
+- [Update] ObjectPool system for VFX instantiate for win performance
+
+0.0.26 : Audio Player (continued with Audition) + Test Build 1
+- [Update] separation to physic fixedUpdate and Update calls in Jump System
+- [Audio] jump sound player [Audition]
+- [Bug] assign multiples audiosource in same times on player
+- [Update] new hover sound [Audition]
+- [Test] Test Build 1 of the game : echec
+- [Bug] change the Using useless declaration in scripts [Build]
+- [Bug] fix issue with log error when Quit the game [Build]
+- [Bug] fix issue with the new input system and eventSystem in UI Canva [Build]
+- [Add] click mouse button with new input system [Build]
+- [Bug] fix severals issues with new input system [Build]
+- [Bug] fix null ref issue with Camera Manager and Camera Shake [Build]
+- [Bug] fix manaOrbs initialization with LoadDataPlayer [Build]
+- [Test] Test Build 1 of the game : success
+
+0.0.27 : Test Hierarchy Scripts & Menu UI with Keyboard & Gamepad
+- [Update] Audio UI .mp3 to .wav and new click, select, validate, back sound [Audition]
+- [Test] Hierarchy GameObjects/Composants script from scene for best testing
+- [Test] Hierarchy controls Action Map script from scene for best testing
+- [Add] Title now in new Intro Scene instead of MainMenu Scene
+- [Update] New Controls ActionMap for Menu & IntroScreen with New Input System
+- [Bug] UserInput script fix issu for interaction between PlayerInput, MenuInput & ScreenInput
+- [Add] Keyboard & Gamepad Input for Intro scene click
+- [Add] Keyboard & Gamepad Input for Main Menu UI scene : submit, select, cancel
+- [Bug] fix severals issues with interaction between mouse, keyboard and gamepad with buttons
+
+0.0.28 : Audio UI (continued) & Menu Pause with Keyboard & Gamepad
+- [Bug] fix issue with UserInput prefab by changing his Instantiate in Load Prefab
+- [Bug] fix severals issues between mouse/gamepad in text button with UI Menu
+- [Update] change UI audio and interactions sounds in Intro, Main, Options & UI Menu
+- [Add] Keyboard & Gamepad Input for Menu Pause : submit, select, cancel
+- [Bug] fix issu (again & again) with double Event System error.
+- [Update] Auto assignation to Prefabs with Prefabs (mana image, menu pause etc...)
+- [Bug] fix issu with cancel action and UnPause() with Menu Pause
+
+0.0.29 : Audio (continued) & Menu Options Keyboard & Gamepad + Options Settings
+- [Add] Keyboard & Gamepad Input for Menu Respawn
+- [Bug] fix issu with Shade Respawn disapear after retarded PlayerController Loading
+- [Update] Audio UI .mp3 to .wav with refine audio for all Foots Step Sounds [Audition]
+- [Add] Keyboard & Gamepad Input/Select for Menu Options & Credits
+- [Add] add audio select/switch for Menu Options
+- [Bug] fix issu with Volume Settings float in Audio Mixer
+- [Update] Volume Settings with logarithmic slider for -80/0 dB
+- [Add] new increase 0-20 dB for Volume Settings 
+- [Audio] slash sword sound player [Audition]
+
+0.0.30 : Options Settings + Preferences Saves System + Resolution Screen
+- [Bug] fix issu with Full Screen mode not activated
+- [Add] add the PrefSave system for Options Settings : full screen
+- [Add] add the Load PrefSaves system in Start Game : full screen
+- [Add] the reference Save/Load in Options Settings forms : full screen
+- [Add] add Save/Load Pref System to Volume Audio mixer & Form slider
+- [Update] change the SavePref to Quit or Back for optimization Disk Ressources
+- [Bug] fix issu with Graphic Quality (but I have no low version quality for my game) 
+- [Add] add Save/Load Pref System to Graphic Quality & Form dropdown
+- [Add] add the resolution DropDown with automatic script computer resolution available
+- [Add] add Save/Load Pref System to Resolution Screen & Form dropdown
+- [Test] Test Build of the game : success
+
+0.0.31 : Sword Audio + Resolve Bugs
+- [Add] create 5 slashs player sword audio : side, jump side, up, jump up, down [Audition]
+- [Add] add audio sword slash sounds to attack vfx synchro in script player control
+- [Update] change the Balling Player animation with Take Damage
+- [Bug] fix issu with speed Flyer & Shade Enemy
+- [Update] Initialize script New Start Game with smachine for Intro Scene
+- [Bug] fix issu with Smachine save-load anim conditions when respawn or load scene
+- [Update] rewrite MenuManager in severals scripts for each Menus (main, submenus, pause...)
+- [Bug] This rewrite script, fix issu with Select button with Start when submenus exists
+- [Bug] fix issu TextColor synchro with Select button to Start with menus
+- [Update] simplify the cancel method with Back button in submenus 
+
+0.0.32 : Menus Improvements + Event System Button Issus
+- [Add] Fade effect transition in beginning of Intro Scene
+- [Bug] fix issu with audio click gamepad in Intro Scene
+- [Bug] fix issu with selected button in Menus when you change gamepad to mouse or inverse
+- [Bug] fix issu with button 0 always selected after hover with mouse
+- [Bug] fix issu with gamepad select button always réinitialize to start twice after mouse
+- [Bug] fix issu with multiples sounds select gamepad button causing interaction canva group buttons
+- [Bug] fix issu with On Pointer Exit no select to null the button
+- [Bug] fix issu with StartSelect when you have submenus and canvagroups interactions after fadeIn
+- [Add] select Audio with Gamepad in all selectables of Options Menus (toggle, slider...)
+- [Update] add to Menus InGame the select Audio with mouse & gamepad
+- [Update] change the Respawn Menu to CanvaGroup MenuFade like other menus
+- [Add] add Main Menu button return to Respawn Menu with respawn/death system
+- [Graph] new UI basic Button [Photoshop]
+
+0.0.33 : Buttons Improvements + Respawn Issus
+- [Bug] simplify the SelectFirstButton() when you finish to display menu with canvagroup
+- [Update] add specific SelectFirstButton() for RespawnMenu with no canvagroup submenus
+- [Bug] fix issu with select Respawn Up button blocked
+- [Graph] new UI Button with hover and no hover effect [Photoshop - Lightroom]
+- [Bug] fix issu with Respawn coroutine timing after Load Scene
+- [Bug] fix change Layer Player after respawn, causing issu detection enemy bug 
+- [Bug] fix issu with timing of SelectButton & SetActive Respawn Menu
+- [Bug] fix issu with timing of SelectButton & OnFadeCompleted Awake-Start
+- [Bug] fix issu with pState.respawn conditions
+- [Bug] fix issu with SMachine OnLoad Scene come back after transition scene
+- [Bug] fix issu with falling animation when Respawn in SMachine
+
+0.0.34 : Audio Manager + Enemys/Orbs Issus
+- [Bug] fix issu where orb mana fill UI no display like orb mana fill system
+- [Bug] fix issu with orb awake declaration when OrbMana is inactive
+- [Bug] fix issu with transition cutscene when enemy hit the player
+- [Add] add invicible state 1sec when you take a transition cutscene for prevent enemy issu
+- [Bug] fix issu with enemy corpse continue to anim damage when is dead
+- [Bug] fix issu with Rumble Gamepad continue to works when quit, change scene, pause...
+- [Add] add AudioManager gameObject with singleton for manage sounds
+- [Bug] fix issu with Player Audio Source continue to works when quit, change scene, pause...
+- [Bug] Player Shade do 2 points damages instead 1
+- [Bug] fix issu with AudioSource come back to MainMenu after Load Scene destroy singleton
+
+0.0.35 : Menus Improvements + Localization System
+- [Add] add Options Menus & Audio/Video/Game/Gamepad/Keyboard Menu with interactions
+- [Graph] new Menu Background & Title Menus
+- [Add] Unity Localization package installation & general Localization settings English/French
+- [Add] add Localization assets table with 2 Graphs Flags en-fr (for example)
+- [Add] add Localization texts table with the Game Menu text translation (for example)
+- [Add] add the system for Translation Dropdown in Game Menu
+- [Add] add save/load Pref system to Localization system
+- [Update] translate in french-english all existants text in Localization Table 
+- [Update] new names in english-french for spells and abilities
+
+0.0.36 : Menus Settings Improvements 
+- [Graph] new Slider graph in same button design [Photoshop]
+- [Graph] new Checkbox graph in same button design [Photoshop]
+- [Graph] new Dropdown graph in same button design [Photoshop]
+- [Update] adjust the settings composants with the new design selectables
+- [Add] autoscroll script with gamepad for dropdown composant
+- [Update] new text color for alls texts and selectables with hover and not
+- [Update] upda	te position for alls texts and selectables & add gradient title color
+
+0.0.37 : SaveData Improvements & SaveMenu System Slot
+- [Bug] fix issu with the destroy initialization save file missing
+- [Update] convert SaveData script from .data to .json format
+- [Add] new SaveMenu scene prototype and add link from/to MainMenu & Start Game
+- [Add] add SaveManager prefab with slots persistants system between scenes
+- [Update] adjust SaveData and all scripts with SaveData ref with the slot saving system
+- [Graph] new SlotSave Button with yes/no hover effect & new/old save effect [Photoshop]
+- [Add] add to SlotSave text and button with switch new game/continued game detection
+- [Graph] Fusion Image for SaveSlot Acte 1 [Photoshop]
+- [Add] Background Scene Image in SlotSave depending on scene localization data
+- [Bug] fix issu with data save keep with new scession game in another slot save
+
+0.0.38 : Statistics Datas Save & Secret Zone Save/Load
+- [Bug] fix issu with mouse exit pointer null ref in MainMenu
+- [Bug] fix issu with canva ui double jump display
+- [Add] add Cancel Gamepad action to Quit/Back to MainMenu/SaveMenu
+- [Add] add Save/Load Statistic system to SaveData Player in stats.json
+- [Add] add Update Stat ingame with all, skill, orbmana, healthmana, death & time game
+- [Add] add Save/Load secret to SaveData Player in secret.json
+- [Add] add Update blackZone to scenes with save zone already explore
+- [Add] add blackZone stat to StatData & update stat ingame
+- [Add] add StatTimeGame & StatNumberAllExplore to SaveSlot Button
+
+0.0.39a : New PlayerInput System + Key Binding Input System + Custom EventSystem UI 
+- [Add] add PlayerInput component for remplace C# Class Generated to New Input System
+- [Update] totally change UserInput script to works with the new PlayerInput component
+- [Update] change alls scripts using UserInput in project to works with the new system
+- [Bug] fix issu where PlayerInput component not working with control schemes required
+- [Add] Install the Sample Key Rebinding of New Input System 
+- [Add] add Key Binding prefab keyboard with PlayerInput in KeyboardMenu
+- [Add] add save/load Pref of Key Binding system
+- [Update] front-end integration/design of keybinding keyboard system to KeyboardMenu
+- [Bug] fix issu with Flag Image Localization : "Wait For Completion" asynchrone error
+- [Update] Custom the EventSystem in StartLoader with InputAsset & recreate it when destroy
+- [Update] In New Input System, change alls controls for EventSystem/UI Input integration
+- [Bug] fix issu with EventSystem/PlayerInput/RebindActionUI conflict when rebind UI navigation
+- [Bug] fix issu with new controlscheme Keyboard&Mouse in MenuBaseManager
+- [Bug] fix issu in new MoveUIInput change with normalized axe and controlscheme detection
+- [Bug] fix issu with Mouse controlscheme not detected with new EventSystem & UserInput
+- [FAIL] ALWAYS BUG : GAMEPAD ALWAYS DETECT WITH MOUSE
+
+0.0.39b : Improve UserInput + Custom EventSystem UI 
+- [Bug] fix issu with Flag Image Localization : "Wait For Completion" asynchrone error
+- [Bug] fix issu with player move with new controlscheme Keyboard&Mouse & "required" device
+- [Update] change my controlAsset to remplace defaultAsset of EventSystem
+- [Update] change UserInput for new ControlAsset integration with new action of EventSystem
+- [Update] improve Navigate UI Menu to Vector2 in UserInput (& add deadzone)
+- [Bug] resolve issu to 0.0.39 "gamepad always detect with mouse" after change of Navigate UI Menu
+- [Update] change all Inputs Variables existing to UserInput in get/set accessor
+- [Update] change all Inputs Variables from PlayerController in get/set accessor to UserInput
+- [Update] Custom the EventSystem in StartLoader with InputAsset for remplacing DefaultAsset
+- [Update] System to recreate after destroy the same EventSystem with InputAsset
+
+0.0.40a : Key Binding Input System WITH C# Generated
+- [Add] Key Binding prefab simple front-end in KeyboardMenu
+- [Add] create RebindUI to GetBindingInfo & UpdateUI with ControlAsset link & prefab
+- [Add] create InputManager with StartRebind & DoRebind and link with RebindUI & ControlAsset
+- [Update] adjust RebindUI & InputManager for composite ControlAsset
+- [Add] create the cancel rebind function and create exclude mouse rebind function
+- [Add] create the save/load pref in rebind function & reset rebind function
+- [Bug] fix issu with composite rebind in InputManager
+- [FAIL] ALWAYS BUG : EVENTSYSTEM/REBIND CONFLICT WHEN REBIND UI NAVIGATE
+
+0.0.40b : Change C# Generated to PlayerInput Component
+- [Add] add PlayerInput component for remplace C# Class Generated to New Input System
+- [Update] Change UserInput to PlayerInput component integration
+- [Update] add SubmitPerformed event to UserInput for integration with Submit Menu Event
+- [Bug] fix issu with Controlshemes required when Gamepad not detected
+- [Bug] fix issu with update PlayerInput when change controlscheme (mouse instability)
+- [Bug] fix issu with Player in Keyboard/Mouse stop moving when key continue to press
+
+0.0.41 : Key Binding Input System (backend)
+- [Add] add RebindActionUI Sample Plugin from New Input System
+- [Add] add simple canvas rebinds with some prefabs RebindActionUI for tests
+- [Add] add textMeshPro to RebindActionUI and simple Overlay for tests
+- [Bug] fix issu with enable/disable action forgotten from original RebindActionUI script
+- [Fail] DualRebind system for rebind 2 actions with same key = impossible
+- [Bug] Major fix with Navigate/UI conflict with EventSystem/Rebind
+- [Update] add cancel rebind and exclude mouse to rebind system
+- [Update] check duplicate rebind for actions composites
+- [Update] improve the Reset to default for switch old input with default input
+- [Update] change the label rebind text in script with localization system
+- [Add] Gamepad Menu Rebind in GamepadMenu
+- [Add] add system to change binding text to icon gamepad (Xbox and PS4)
+- [Add] add Reset All Bindings button with controlscheme choice (Gamepad-Keyboard)
+- [Add] add Save/Load Prefs in Key Binding Input System
+
+0.0.42 : Key Binding Input System (frontend)
+- [Add] Localization label for key binding system
+- [Add] add secondary key input bindings for keyboard & adjust position buttons
+- [Update] UI Design of rebind/reset buttons in Keyboard & Gamepad Menu + Overlay
+- [Update] adjust select/pointer interactions of RebindAction in alls Buttons
+- [Bug] fix issu with TextColor / EventSystem with hover in submenus
+- [Add] add empty binding possibility with secondary rebind for some keys
+- [Add] add keyboard/mouse icons system to RebindActionUI
+
+0.0.43 : Aurel NPC + Yrarium Static & Item + Coin System + Door/Key Save-Load
+- [Graph] modeling/texture/bone 3d pnj Aurel [Photoshop - Blender]
+- [Graph] atlas texture static & item Ayrium [Photoshop - Lightroom - Blender]
+- [Add] add coins drop system with pulse force gravity when enemy dead
+- [Add] add coin pickup system with destroy and count player number coin
+- [Add] add coin UI to canvas with count callback
+- [Add] add Save/Load Coins & Key to player SaveData
+- [Update] blood enemy emitate reduce
+- [Update] add key item save/load destroyData & improve door-key scripts
+- [Update] add door static save/load openData
+
+0.0.44 : Save/Load Door-Key-Lever system (continued)
+- [Bug] fix issu with GameManager initialization timing with new game
+- [Update] root scene loading game for testing in Test Room
+- [Update] adjust scripts for save & respawn close no save with Door/Key system
+- [Update] adjust scripts for save & respawn close no save with Lever/Door system
+- [Update] adjust scripts for save with Lever/Key system
+- [Add] add Door/Key/Lever with respawn close no save system
+- [Update] adjust prefab door/key/lever with all new system in Test Room & Temple Room
+
+0.0.45 : Static Breakable System
+- [Add] add logic of static breakable with HitEnemy/Attackable detect collider (YrariumTree)
+- [Add] add logic of static breakable generated coins when hit (YrariumTree)
+- [Add] add logic of static breakable change state after hit/health (YrariumTree)
+- [Graph] change Yrarium coin & tree graph with 6 values of coins [Photoshop]
+- [Update] CoinDrop script instantiate 6 coins values
+- [Add] add Save/Load static breakable in SaveData with states after hit/health (YrariumTree)
+
+0.0.46 : NPC Interactable & Conversation Box & Dialogue Progression Save/Load
+- [Graph] create Aurel anim atlas : idle [blender + unity]
+- [Add] add script system NPC interactable (with arrow sprite)
+- [Add] add Start Conversation/Dialogue system with UI Dialogue Box
+- [Add] add Typing conversation to Dialogue Box & End Conversation system
+- [Add] add paragraphs to Dialogue Box & NPC manager dialogue
+- [Add] add system to progress Dialogue box with Quest Generic system
+- [Bug] fix issu from Dictionary Instance NPC to List Dialogue NPC
+- [Bug] fix issu with MissingReference Exception when change Progression Dialogue
+- [Add] add localization system for NPC Dialogue Box with scriptables objects
+- [Add] add Save/Load NPC ProgressionPoint to SaveData
+
+0.0.47 : NPC Secondary Interactable & Shop Box UI Navigation / Display Items
+- [Add] add Secondary Activate Input (HealInput) and secondary interactable NPC
+- [Add] add Shop Box Controller with UI Shop Box when NPC Interaction
+- [Add] add Shop UI List Item Generic Shop System with ScriptablesObjets
+- [Add] organise Shop UI to Scroll generic vertical View
+- [Graph] Update slider scroll bar for best transition [Photoshop]
+- [Add] add Button Menu on Items in Shop System.
+- [Add] add EvenSystem Select/Click MenuBaseManager system top Menu Shop
+- [Bug] fix issu with asynchrone localization & pool error ressource (same bug)
+- [Bug] fix issu with the first select button display in RectScroll
+- [Bug] fix issu with the scroll when MiddleWheel on the Box Shop
+- [Bug] fix issu with the scroll when using gamepad on the Box Shop
+- [Update] improve navigation in Box Shop with Lerp effect
+- [Add] add Back button and fix navigation out of the RectScroll with Gamepad
+- [Bug] fix issu to clear the list item before to come back in Shop Box
+- [Bug] fix issu with the model item count in the list of item instantiate
+
+0.0.48 : Shop Box & Dialogue Box Improvement 
+- [Add] add Selling system item if Coin enough & update display list item
+- [Add] add Save/Load shop system & update list items of NPC Shop Box
+- [Update] improve system for synchonize different shops of same NPCs 
+- [Update] improve system for no synchronize same item in different NPCs
+- [Add] add confirm box dialogue & not enough money box dialogue
+- [Graph] design icon menu map for saving static for model icon map [Photoshop]
+- [Graph] redesign old & create new Menu Box with same style with different size [Photoshop]
+- [Graph] new design of UI Select in Shop Box with hover and no hover effect [Photoshop]
+- [Graph] change background & title UI for shop box [Photoshop]
+- [Graph] portrait design of Aurel NPC [Photoshop]
+- [Add] add NPC Portrait & Name to Dialogue Box & Shop Box
+- [Add] add 3 versions of Dialogue Box : left, right, front & adjust scripts for that
+- [Update] update Dialogue Box in 2 systems : FrontBox & Alternate Left-Right Box
+- [Add] add Yrarium Coin to Shop Box with UpdateCoin
+- [Update] Improve UI Display & Navigate Button of ConfirmBox & NotEnoughBox
+
+0.0.49 : Music & Inventory UI Improvement & 4 Skill Body Player & Idle/Walking Improvement
+- [Bug] fix issu with Audio UI Menu OnPointer Event now in script HoverButton
+- [Bug] fix issu with new games wrong stats screen by default in SaveMenu
+- [Graph] cutting the player into different items/body at different scales [Blender]
+- [Graph] improve the HUD Mana canva UI and link graph hud with health [Photoshop]
+- [Graph] improve the inventory UI model for background no item display [Photoshop]
+- [Graph] add hover effect in inventory UI with script effect on button [Photoshop]
+- [New] Acquiring a piano Yamaha Clavinova CLP-735. Install in studio room
+- [New] Acquiring Cubase LE AI Element 13 with Halion Sonic & plus
+- [Audio] rough composition of intro music & first musical arrangement : orterra theme
+- [Audio] rough composition of theme 1 music & first musical arrangement : stormbell
+- [Audio] rough composition of theme 2 music & first musical arrangement : templebell
+- [Audio] rough composition of theme 3 music & first musical arrangement : earthbell
+- [Audio] rough composition of 6 boss musics & some other musical compositions / attempts
+- [Bug] new better version of Localization Package in Local folder with Github version
+- [Bug] fix issu null ref with HearthCanva in Inventory
+- [Graph] improve segment body in inventory UI with good orientation [Blender]
+- [Add] add 4 items skill with canvas tutorial : body, arms, legs, sword
+- [Add] add the 4 skill bodies with description in Inventory UI canvas
+- [Bug] fix issu when Player.Instance is null ref
+- [Graph] adjust bloom emission of the neck [Blender]
+- [Update] Update Idle Player with cycle quality & atlas sprite
+- [Add] Idle No Sword Player anim & animator sprite [Blender]
+- [Add] Idle No Arms Player anim & animator sprite [Blender]
+- [Update] Update Walking Player with cycle quality & atlas sprite
+- [Add] Walking No Sword Player anim & animator sprite [Blender]
+- [Add] Walking No Arms Player anim & animator sprite [Blender]
+- [Add] adjust scripts for the 4 Skill Body Player Conditions
+- [Update] change scripts to play good Idle & Walking animation with Skill Body Player
+- [Update] some adjustements in Player Animator State Machine 
+
+0.0.50 : Jumping/Falling Improvement & Skill Body Progression
+- [Update] Update Jumping Player with cycle quality & atlas sprite
+- [Add] Jumping No Sword Player anim & animator sprite [Blender]
+- [Add] Jumping No Arms Player anim & animator sprite [Blender]
+- [Update] Update Falling Player with cycle quality & atlas sprite
+- [Add] Falling No Sword Player anim & animator sprite [Blender]
+- [Add] Falling No Arms Player anim & animator sprite [Blender]
+- [Update] some adjustements in Player Animator State Machine
+- [Update] change scripts to play good Jumping & Falling animation with Skill Body Player
+- [Bug] fix issu when Jump to Idle animation with new Grounded bool anim state
+- [Add] Skill Body progression conditions scripts in PlayerController
+- [Bug] fix issu with change anim after new skill = force to Ball when you trigger skill item
+- [Add] Trigger NPC progression dialogue prefab
+- [Add] max health advance with item skill body
+- [Test] Test Build of the game : success
+
+0.0.51 : Damage/Dying Improvement & Ball Jump Anim & Balling to Idle Anim
+- [Update] Update Damage Player with cycle quality & atlas sprite
+- [Add] Damage No Sword Player anim & animator sprite [Blender]
+- [Add] Damage No Arms Player anim & animator sprite [Blender]
+- [Update] No Shade Ball when dying with No Skill Body for best intro
+- [Update] Update Dying Player with cycle quality & atlas sprite
+- [Add] Dying No Sword Player anim & animator sprite [Blender]
+- [Add] Dying No Arms Player anim & animator sprite [Blender]
+- [Add] Ball Jump Player anim & animator sprite [Blender]
+- [Add] Balling to Idle Player anim & animator sprite [Blender]
+- [Add] Balling to Idle No Sword Player anim & animator sprite [Blender]
+- [Add] Balling to Idle No Arms Player anim & animator sprite [Blender]
+
+0.0.52 : Skill Canvas/items Improvement 1 & PlayerInput Binding In TextMeshPro
+- [Update] change unlockSkill scripts item to generic template with canva and scriptable objet
+- [Bug] fix issu with display generic skill scriptableobjet & localization
+- [Graph] change the model template of Skill Canva UI Menu [Photoshop]
+- [Bug] Add rebindAction icon to skill canva example & fix issu with display icon PlayerInput
+- [Add] Add text PlayerInput system to generic Skill Canva with scriptableobjet system
+- [Add] Add text PlayerInput scriptableobjet filtered with currentControlScheme
+- [Add] Add icons PlayerInput system to generic Skill Canva with scriptableobjet system
+- [Add] Add icons PlayerInput to TextMeshPro asset to new generic Skill Canva
+- [Add] PlayerInput icons/texts now in Localization Text with tag remplacement
+- [Add] adjust icons/text PlayerInput when severals bindings to 1 action (keyboard + mouse)
+- [Add] adjust icons/text PlayerInput when Action have no bindings
+- [Add] adjust text PlayerInput when Azerty-Qwerty keyboard & upper letter
+- [Bug] fix major issu with composite binding and separation icons/text PlayerInput
+- [Bug] fix issu with icons/text PlayerInput order when keyboard + mouse
+- [Update] adjust each sprite PlayerInput Icons to text mesh pro position
+
+0.0.53 : Skill Canvas/Items Improvement 2 & Inventory Control Menu
+- [Graph] change the model template of Skill Canva UI Menu for 3 paragraphs [Photoshop]
+- [Update] change the model template of Skill Canva for run with all skills
+- [Graph] new example with a improved skill (double jump) with new image skill [Photoshop]
+- [Bug] fix issu with icons/text PlayerInput when it's the */{Submit} action 
+- [Bug] fix issu with icons/text PlayerInput when rebind map is the / character
+- [Add] add SkillPlayerHead canva/item & adjust generic item skill
+- [Bug] fix issu when currentcontrolscheme is called with a null value
+- [Update] update 4 items skill with new skill canvas : body, arms, legs, sword
+- [Update] change control Inventory menu with MenuNavigate and FadeMenu effect
+- [Update] change the system of UnInventory to more complex system like Pause/Respawn Menu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Known Bugs :
+
+-	canvaMenu DeathScreen MainMenu GameManager RespawnMainMenu OnClick method run not in the prefab but in the scene 
+-	rebind with mouse no run
+-	rebind menu azerty-qwerty instability
+-	rebind inventory control from menu
