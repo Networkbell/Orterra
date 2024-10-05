@@ -749,7 +749,21 @@ Version actuelle : Prototype
 - [Update] change control Inventory menu with MenuNavigate and FadeMenu effect
 - [Update] change the system of UnInventory to more complex system like Pause/Respawn Menu
 
-
+0.0.54: Skill Canvas/Items Improvement 3 & Inventory UI Improvement 2
+- [Bug] fix issu with update image skill in Inventory UI since the change from SetActive to CanvaGroup
+- [Bug] fix issu with bloom effect of neck body and canva UI on inventory UI
+- [Add] adds the button system activated depending on the activated skill in Inventory UI
+- [Bug] fixed bug of button with different shapes than rectangle to match image
+- [Graph] new skills thumbnails : dash-doubleJump-wallJump-spellUp/Side/Down [Photoshop]
+- [Graph] new skills frieze : dash- wallJump-spellUp/Side/Down [Photoshop]
+- [Add] add skills item/canva scriptableobjet of dash- wallJump-spellUp/Side/Down 
+- [Update] Improve the canva of skills button in Inventory UI
+- [Add] add system description skills/body buttons with scriptableobjet in Inventory UI
+- [Add] add MenuManager eventsystem to Inventory UI with dynamical add button
+- [Bug] fix issu with multiple auto add eventTrigger in MenuBaseManager
+- [Update] best integration eventTrigger with HoverButton() in MenuInventoryManager
+- [Graph] change the Mana shards item graphism (5 states) [Photoshop]
+- [Bug] fix issu with dontdestroyobject UIManager and visibility in Unity inspector
 
 
 
