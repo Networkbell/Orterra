@@ -749,7 +749,7 @@ Version actuelle : Prototype
 - [Update] change control Inventory menu with MenuNavigate and FadeMenu effect
 - [Update] change the system of UnInventory to more complex system like Pause/Respawn Menu
 
-0.0.54: Skill Canvas/Items Improvement 3 & Inventory UI Improvement 2
+0.0.54 : Skill Canvas/Items Improvement 3 & Inventory UI Improvement 2
 - [Bug] fix issu with update image skill in Inventory UI since the change from SetActive to CanvaGroup
 - [Bug] fix issu with bloom effect of neck body and canva UI on inventory UI
 - [Add] adds the button system activated depending on the activated skill in Inventory UI
@@ -764,6 +764,15 @@ Version actuelle : Prototype
 - [Update] best integration eventTrigger with HoverButton() in MenuInventoryManager
 - [Graph] change the Mana shards item graphism (5 states) [Photoshop]
 - [Bug] fix issu with dontdestroyobject UIManager and visibility in Unity inspector
+
+0.0.55 : Shards heart/mana Improvement 
+- [Update] change the heart/mana Shards system to run in universal CanvaUI instead of items canva
+- [Update] somes graphics improvements in heart/mana Shards item/canva
+- [Update] simplification & optimization of heart/mana scripts in canva shard animation
+- [Update] improvement of shards heart/mana with button hover in Inventory UI canva
+- [Update] increase the heart/mana shards to 5 & add first empty animation transition
+- [Update] improvement of shards heart/mana animation transition with rotation/zoom effect
+- [Update] update heart/mana shards in Inventory UI with 5 shards & no display when 0
 
 
 
