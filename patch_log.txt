@@ -774,6 +774,19 @@ Version actuelle : Prototype
 - [Update] improvement of shards heart/mana animation transition with rotation/zoom effect
 - [Update] update heart/mana shards in Inventory UI with 5 shards & no display when 0
 
+0.0.56 : Inventory UI Improvement 3 : Coins, Key, Heart, Switchs Menu Buttons
+- [Add] add statCoinsTotal & statKeysTotal to SaveData, PlayerStats and CoinDrop
+- [Add] add dynamic Coins system Img/Text with button hover in Inventory UI canva
+- [Add] add dynamic Keys system with groupHover effect on buttons in Inventory UI canva
+- [Bug] fix issu with SaveData & Key start instantiate / fix issu with SaveData and Key after lever door
+- [Add] add dynamic HeartPrefab system with button in Inventory UI canva
+- [Add] add groupHover effect on buttons of HeartPrefab with dynamic size in Inventory UI canva
+- [Add] add button Map and Orbs to Inventory UI Canva with some organizational adjustments
+- [Add] add the Control Input setup for Swicths Menu Left-Right Buttons
+- [Add] add the Switch Map GameManager system with canvaGroup MadeFade in Inventory UI
+- [Bug] fix issu with the fast ToggleMap old system with the new CanvaGroup Map Switch
+- [Add] add the UnSetMap system with GameManager for MapHandler
+- [Bug] fix issu with AddButtonManager forget scripts in SwitchMap & UnSetMap button links
 
 
 
