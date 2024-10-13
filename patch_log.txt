@@ -774,7 +774,7 @@ Version actuelle : Prototype
 - [Update] improvement of shards heart/mana animation transition with rotation/zoom effect
 - [Update] update heart/mana shards in Inventory UI with 5 shards & no display when 0
 
-0.0.56 : Inventory UI Improvement 3 : Coins, Key, Heart, Switchs Menu Buttons
+0.0.56 : Inventory UI Improvement 3 : Coins, Key, Heart, Switchs Menu Buttons (begin)
 - [Add] add statCoinsTotal & statKeysTotal to SaveData, PlayerStats and CoinDrop
 - [Add] add dynamic Coins system Img/Text with button hover in Inventory UI canva
 - [Add] add dynamic Keys system with groupHover effect on buttons in Inventory UI canva
@@ -787,6 +787,17 @@ Version actuelle : Prototype
 - [Bug] fix issu with the fast ToggleMap old system with the new CanvaGroup Map Switch
 - [Add] add the UnSetMap system with GameManager for MapHandler
 - [Bug] fix issu with AddButtonManager forget scripts in SwitchMap & UnSetMap button links
+
+0.0.57 : Inventory UI Improvement 4 + Switchs Menu Buttons (end) : Inventory-Map-Orb
+- [Update] optimize scripts by merging all AddButtonManager in UIManager onClick button
+- [Update] singleton scripts between GameManager & UIManager (buttons, MenuFade...)
+- [Add] add the Switch Left Orb & Inventory (+ Orb Unset) GameManager system in Inventory UI
+- [Bug] fix issu with MenuFade & Input Instability to fast when Switch Menus
+- [Bug] fix issu with incorrect duplicate GameManager events with Switch system
+- [Add] add the Switch Right Map & Orb & Inventory GameManager system in Inventory UI
+- [Bug] fix issu with InventoryDescription when 4 paragraphs & no bindings input
+- [Add] add full ItemDescription for Coins, Keys, Hearts, Shard Heart and Shard Mana [Lore]
+- [Update] save alls texts localization in json format & fix all tags for better integration
 
 
 
