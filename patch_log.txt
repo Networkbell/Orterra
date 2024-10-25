@@ -799,6 +799,16 @@ Version actuelle : Prototype
 - [Add] add full ItemDescription for Coins, Keys, Hearts, Shard Heart and Shard Mana [Lore]
 - [Update] save alls texts localization in json format & fix all tags for better integration
 
+0.0.58 : Map Improvement 1
+- [Add] develop rapid process to transform image map into a svg vector drawing [Illustrator]
+- [Bug] some adjustement of White Box in Temple1 (point zero + camera Z)
+- [Add] Map Temple1 & Temple2 with all vectors and secrets rooms [Illustrator]
+- [Add] add the system to hide secret areas in the map since the activation of black zones ingame
+- [Update] reprocess map construct with basic, sd & hd version of map/secrets/misc [Illustrator]
+- [Add] design of title map handle & UI viewport content of map & Ball Earth Map design
+- [Bug] fix issu with transition between secret and map zone with no filter compression image
+- [Update] change MapManager to recursive method and somes adjustements to map scripts
+- [Bug] fix issu with savemachine update map and good update map when start load game
 
 
 
