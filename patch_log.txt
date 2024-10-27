@@ -799,7 +799,7 @@ Version actuelle : Prototype
 - [Add] add full ItemDescription for Coins, Keys, Hearts, Shard Heart and Shard Mana [Lore]
 - [Update] save alls texts localization in json format & fix all tags for better integration
 
-0.0.58 : Map Improvement 1
+0.0.58 : Map Improvement 1 : new maps design process 
 - [Add] develop rapid process to transform image map into a svg vector drawing [Illustrator]
 - [Bug] some adjustement of White Box in Temple1 (point zero + camera Z)
 - [Add] Map Temple1 & Temple2 with all vectors and secrets rooms [Illustrator]
@@ -810,6 +810,16 @@ Version actuelle : Prototype
 - [Update] change MapManager to recursive method and somes adjustements to map scripts
 - [Bug] fix issu with savemachine update map and good update map when start load game
 
+0.0.59 : Map Improvement 2 : secrets/miscs ingame + Basic to SD item/shop
+- [Update] change MapSecretManager/BlackZone to recursive method & adjustements to scripts
+- [Add] add the system to hide doors misc in the map since the activation of doors ingame
+- [Bug] fix issu with map update when load save game in another scene to current scene
+- [Bug] fix minor bug with duplicate InputManager prefab in one scene (already in Load prefab)
+- [Add] add map item with SaveData item map scripts process
+- [Add] add the system to update SD/Misc scene map when Item scene Map is found
+- [Add] add the Shop NPC item convert system with update/load to player item skill power
+- [Add] add the item map SD/Misc with Shop NPC system
+- [Bug] fix issu with load game map SD and savemachine map update
 
 
 
