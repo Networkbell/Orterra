@@ -821,6 +821,13 @@ Version actuelle : Prototype
 - [Add] add the item map SD/Misc with Shop NPC system
 - [Bug] fix issu with load game map SD and savemachine map update
 
+0.0.60 : Map Improvement 3 : Map Version World / Zoom
+- [Add] separate mapHandler to map version World and Zoom canva & update switch/display
+- [Add] change version of map to no filter basic version for world map [Illustrator]
+- [Add] add dynamic scripts to display world map & button world map with SD map version
+- [Update] adjust the mapWorld canvas with buttons world map MenuMapManager navigation
+- [Add] add the world map button click to Zoom Map version & adjust cancel/display canvagroup
+- [Add] new script to center view when clicking from world map to correct zoomed map
 
 
 
