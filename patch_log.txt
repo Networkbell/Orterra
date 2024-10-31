@@ -829,6 +829,16 @@ Version actuelle : Prototype
 - [Add] add the world map button click to Zoom Map version & adjust cancel/display canvagroup
 - [Add] new script to center view when clicking from world map to correct zoomed map
 
+0.0.61 : Map Improvement 4 : Navigation / Zoom
+- [Add] add navigation with gamepad/keyboard to map zoom & smooth lerp navigate
+- [Add] new UserInput zoom in / zoom out with MenuInput controls adjusts scripts
+- [Add] add zoom/dezoom scripts on Map Zoom & adjust content zoom on start
+- [Update] adapte the scroll method to View Scroll Zoom/Navigate without scroll bar
+- [Add] add dynamic arrow to navigate in zoom map in border of the map
+- [Bug] fix issu with dezoom max proportion between content and viewport (arrow visible)
+- [Add] add bindings & textMeshPro for map zoom & add the */{Cancel} action in binding scripts
+- [Bug] fix issu with localized association text when bindings in map zoom
+- [Bug] fix issu in composite part bindings script with the specific MenuInput Navigate action binding
 
 
 
