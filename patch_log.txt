@@ -839,7 +839,19 @@ Version actuelle : Prototype
 - [Add] add bindings & textMeshPro for map zoom & add the */{Cancel} action in binding scripts
 - [Bug] fix issu with localized association text when bindings in map zoom
 - [Bug] fix issu in composite part bindings script with the specific MenuInput Navigate action binding
+- [Add] add methods/parameters in SaveData & PlayerController for Orbs backend menu system
 
+0.0.62 : Orbs Menu : Front-end, Item, Unlock, Nodes, Install Save-Load Orb
+- [Update] improve front-end orb menu canva title, background & add misc, dividers, grids
+- [Update] improve graphic dividers & best rect size position elements in Inventory Menu
+- [Add] add front-end OrbMenu (grid, divisers, button, background, back image items orbs...)
+- [Add] duplicate skill item system to orbs item system with orb canva box item
+- [Add] add orb item Map HD with his lore localized in canva item & orb menu
+- [Add] duplicate skill inventary unlock system to orbs menu unlock system with description box
+- [Add] add the install system Orb with dynamic list and update image with scriptableobject Orb
+- [Add] add Save/LoadData with Install Orbs and update/load/save Nodes Install Orbs
+- [Bug] fix issu with load initial Nodes not update to initial value when new games
+- [Add] add update Orb Installed after load save game with good orb data
 
 
 
