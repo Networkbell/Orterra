@@ -853,7 +853,17 @@ Version actuelle : Prototype
 - [Bug] fix issu with load initial Nodes not update to initial value when new games
 - [Add] add update Orb Installed after load save game with good orb data
 
-
+0.0.63 : Orbs Menu Improvement : new orbs + Uninstall Save-Load Orb + Nodes UI
+- [Bug] change the hierarchy component to Orb Installed iterate to exact hierarchy to Orb Unlocked
+- [Add] add orb item Coin Up with his lore localized in canva item & orb menu [Photoshop]
+- [Bug] fix issu with duplicate installed orb when reload canvagroup in Orb Menu
+- [Add] add orb item Resurec with his lore localized in canva item & orb menu [Photoshop]	
+- [Add] add the Uninstall dynamic Orb system with Save/Load data uninstall orb
+- [Bug] fix issu with clear to null image after uninstall orb
+- [Bug] fix issu with Nodes int bad update when uninstall orb
+- [Update] adjust front-end & graphic orb size position & background in Orb Menu
+- [Graph] new Nodes graph for Orb Menu [Photoshop]
+- [Add] add the canva UI system for Nodes dyanmic update when Installed Orb
 
 
 
