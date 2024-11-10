@@ -865,6 +865,17 @@ Version actuelle : Prototype
 - [Graph] new Nodes graph for Orb Menu [Photoshop]
 - [Add] add the canva UI system for Nodes dyanmic update when Installed Orb
 
+0.0.64 : Orbs Menu Improvement 2 : Notch Orb UI + Item Up Nodes + Item Up Notch Orb Shards
+- [Graph] new Notch Orbs graph for Orb Menu [Photoshop]
+- [Add] add the canva UI system for Orb Notch & update orb notch installed with maxOrbs
+- [Add] add item script fo upgrade maxNodes++ 
+- [Bug] fix issu with destroyItem SaveData unique name with SaveManager Scene
+- [Bug] fix issu with update callback UI maxNodes++ item & forgotten Nodes++ update
+- [Graph] change graph item & UI of Shards Orb Mana in his 5 states [Photoshop]
+- [Graph] add graph item & UI of Shards Orb Install Notch in his 5 states [Photoshop]
+- [Add] add Orb Notch Install with Shard Item system Save/Load + Update Orb Install UI
+- [Add] add Orb Notch Install update in Inventory Menu UI with lore text
+- [Bug] fix issu with orb notch & orb nodes statistic save data 
 
 
 
