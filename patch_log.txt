@@ -877,6 +877,18 @@ Version actuelle : Prototype
 - [Add] add Orb Notch Install update in Inventory Menu UI with lore text
 - [Bug] fix issu with orb notch & orb nodes statistic save data 
 
+0.0.65 : Orbs Menu Improvement 3 + Orbs Skill (Map + Coin) + Shards/Pool/EventSystem Up
+- [Add] add Node Sprite Asset number with remplacement text in Description Orb Menu
+- [Add] add statistic number shards/keys with remplacement text in Description Inventory Menu
+- [Add] add NoInstall Box Text for AlreadyInstalled, No Slot, No Nodes with button box
+- [Bug] fix issu with select and confirm button to NoInstall Box with Gamepad & EventSystem
+- [Bug] fix issu with EventSystem select button on Orb Unlock at Start & when no free orb slot
+- [Add] add Description Orb in Install Slot Hover button grid with dynamic update
+- [Add] add the Map HD Orb update skill in MapManager and change in Map scripts
+- [Bug] fix issu with Orb Install update ingame delegate in playerOrbs scripts
+- [Update] Change the Coin system Drop to PoolObject system for best performance
+- [Add] add the Coin Attirate Orb update skill in CoinDrop and change Yrarium item scripts
+- [Bug] fix issu with PlayerOrbs/PlayerController update states when start and load games
 
 
 
