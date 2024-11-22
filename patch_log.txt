@@ -890,7 +890,17 @@ Version actuelle : Prototype
 - [Add] add the Coin Attirate Orb update skill in CoinDrop and change Yrarium item scripts
 - [Bug] fix issu with PlayerOrbs/PlayerController update states when start and load games
 
-
+0.0.66 : NPC Niora + Shop SubSkill + SubSkills Inventory Menu
+- [Graph] modeling/texture/bone 3d pnj Niora [Photoshop - Blender]
+- [Graph] modeling/texture/bone 3d enemy Terrion [Photoshop - Blender]
+- [Bug] fix issu with transform transition trigger prefab with lag when changing scenes (reset z index)
+- [Graph] create Niora anim atlas idle + portrait shop [Photoshop + Blender + Unity]
+- [Add] add Niora First Dialogues + Attack Shop Interactions scriptableObjets
+- [Add] add 12 sub-skills slot front-end in Inventory Menu	
+- [Graph] add 6 sub-skills icons for inventory and shop (attack, jump attack, deviation) [Photoshop]
+- [Add] add the 6 sub-skills in scriptableObjet item for Niora Shop UI
+- [Add] configure the subskills items to Save/Load Data Skills when buy items
+- [Add] add the sub-skills dynamic interaction/display in Inventory Menu with buttons
 
 
 
