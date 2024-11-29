@@ -902,7 +902,19 @@ Version actuelle : Prototype
 - [Add] configure the subskills items to Save/Load Data Skills when buy items
 - [Add] add the sub-skills dynamic interaction/display in Inventory Menu with buttons
 
-
+0.0.67 : Attack Improvement + SubSkill Attack + Animator Improvement
+- [Update] improve the player side static attack animation in 3D [Blender]
+- [Add] add player running attack animation in 3D + momentum anim attack running [Blender]
+- [Update] update animaton & animator for player attack side and player attack running
+- [Bug] fix issu with attack side Vector2 zero movement
+- [Add] add system to synchronous anim when you stop animation (attack running -> attack side)
+- [Bug] fix issu with animation transition attack side to attack running with adding momentum
+- [Bug] fix issu with transition offset from attack running to running
+- [Bug] fix issu with transition animator to systematic 1 frame default Idle before new transition
+- [Update] improve the player jump attack up animation in 3D [Blender]
+- [Update] clear & improve the Animator state machine & Script Attack for best transitions
+- [Add] add all subskills attacking conditions to script attack
+- [Bug] fix issu with jump and attack side/run when you are again in prejump near the ground
 
 
 
