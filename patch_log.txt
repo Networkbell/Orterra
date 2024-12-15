@@ -916,7 +916,19 @@ Version actuelle : Prototype
 - [Add] add all subskills attacking conditions to script attack
 - [Bug] fix issu with jump and attack side/run when you are again in prejump near the ground
 
-
+0.0.68 : Terrion Enemy + Behavior Tree Designer + New Attack Enemy Slash
+- [Update] update modeling/texture/bone 3d enemy Terrion [Photoshop - Blender]
+- [Graph] create Terrion anim atlas idle + walk + slash + standing + transitions [Blender + Unity]
+- [Add] add animation / animator States to Terrion and Core AI Enemy2 scripts
+- [Add] add Behavior Tree Designer system package asset + Formation Tuto
+- [Add] add DOTween system package asset + Formation Tuto
+- [Add] new behavior tree with Turn / Walk / Idle AI action routine = Patrol 
+- [Bug] fix issu with Turn routine & Selector & Anim Handler when multiples Turn routines is gone
+- [Add] add random effect in AI with the Patrol routine & random Walk Pause routine
+- [Update] Terrion 3D model /texture/anim/sprite update improvement
+- [Add] new behavior tree with CanSee / CanHeard / GroundWall AI conditionnal routines
+- [Add] new behavior tree with StandRun / StandBack / Slash AI actions routines = Attack
+- [Add] new system enemy attack with slash routine : Update CoreEnemy scripts
 
 
 
