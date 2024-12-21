@@ -930,7 +930,17 @@ Version actuelle : Prototype
 - [Add] new behavior tree with StandRun / StandBack / Slash AI actions routines = Attack
 - [Add] new system enemy attack with slash routine : Update CoreEnemy scripts
 
-
+0.0.69 : Enemy AI Improvement (Terrion)
+- [Add] update terrion behavior tree action : FacePlayer + Repeater Conditional Active-Passive Phasis
+- [Add] create Terrion anim atlas hit + dead [Blender + Unity]
+- [Update] merge CanSee+CanHeard conditional task in CanAttack with variable for best behavior IA
+- [Bug] split Turn anim with FacePlayer for fix duplicate issu with anim event action task script
+- [Add] add IsHit + Hit + IsDead + Dead Conditionnals/Actions Tasks in Behavior Designer Tree
+- [Add] add IsPlayerAttacking and update Attackings states for best defend when player attacking
+- [Update] change the collider layer and tag interactions with CoreEnemy and PlayerController
+- [Add] create Terrion anim atlas back jump + big slash [Blender + Unity]
+- [Add] create Player anim atlas parry deviation [Blender + Unity]
+- [Add] add BackJump + SlashRun Actions Tasks in Behavior Designer Tree
 
 
 
