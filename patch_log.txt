@@ -942,6 +942,24 @@ Version actuelle : Prototype
 - [Add] create Player anim atlas parry deviation [Blender + Unity]
 - [Add] add BackJump + SlashRun Actions Tasks in Behavior Designer Tree
 
+0.0.70 : Bug
+- [Bug] minor fix with Attack Ennemi script collider with OnTriggerStay to OnTriggerEnter
+- [Bug] fix issu with HitStopTime does not change with updated variables
+- [Bug] minor fix to stop mana draining while healing mid-air & change velocity to zero when healing
+- [Bug] minor fix with heart controller to change health variable to Health for best callback
+- [Bug] minor fix with Recoil velocity & add variable IsHit for best states when player is hit
+- [Bug] minor fix to prevent flashing player when is in cutscene with invincibility
+- [Bug] minor fix for give temporary invincibility player after transition scene
+- [Bug] minor fix to change layer deafult when enemy dead to IgnorePlayer layer
+- [Bug] minor fix order load game data at start PlayerController
+- [Bug] minor fix to stop moving player corpse when dead
+- [Bug] fix issu with extra Mana orbs don’t gain Mana while the Mana State is halfMana
+- [Bug] fix issu with non-functional WallSlide/WallJump flips player permanently
+- [Bug] minor fix with collectibles do not disappear when picking them up immediately
+- [Bug] minor fix to reduce to 0 the Y velocity with Wall Jumping when stop Wall Jumping
+- [Bug] minor fix with localization text not assignates
+- [Bug] fix issu with interact NPC dialogue/shop after changing box collider NPC
+- [Bug] fix issu with NPC conversation not ending when I was moving away
 
 
 
