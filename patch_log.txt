@@ -961,6 +961,17 @@ Version actuelle : Prototype
 - [Bug] fix issu with interact NPC dialogue/shop after changing box collider NPC
 - [Bug] fix issu with NPC conversation not ending when I was moving away
 
+0.0.71 : Parry System
+- [Add] add the system enable/disable perfect parry collider to CoreEnemy Slash attack
+- [Add] add animaton & animator to player parry with events script player collider
+- [Add] add script parry system with overlap box layer collider (only debug log effect)
+- [Add] add IsBlock conditionnal behavior task and adjust interuption slash when parry is successfull
+- [Add] add Block action task behavior and adjust variable-timer hit anim interruption attack
+- [Add] add separation Almost/Perfect parry and duplicate colliders/scripts for almost parry system
+- [Add] add parry failed script eventuality & mana gain/loss when perfect or failed parry
+- [Add] add the interrupt back jump enemy and attack facility when parry is successfull
+- [Bug] fix issu with Attack Player animator failed during parry animation (first attack just after parry)
+- [Add] new Asset Test VFX4 with Shader Graph + Visual Effect Graph + VFX Graph Aguilar Prod
 
 
 
