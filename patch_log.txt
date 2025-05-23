@@ -973,7 +973,16 @@ Version actuelle : Prototype
 - [Bug] fix issu with Attack Player animator failed during parry animation (first attack just after parry)
 - [Add] new Asset Test VFX4 with Shader Graph + Visual Effect Graph + VFX Graph Aguilar Prod
 
-
+0.0.72 : VFX (Parry + Enemy Slash) + Slash Run (Parry + VFX) + Spell Ball (VFX)
+- [Update] Convert Asset Test VFX4 Graph Aguilar Prod 3D to 2D VFX URP & Import VFX Mod Asset
+- [Tuto] Formation to VFX Graph (Youtube) and first VFX Asset on Test Project
+- [Graph] add Shield VFX to Perfect Parry /Partial Parry / Parry Fail with VFX Graph
+- [Add] adjust scripts for best visual/behavior VFX parry (perfect partial, fail)
+- [Graph] add Slash Enemy VFX with VFX Graph and adjust scripts with slash VFX damage behavior
+- [Add] add Parry System Collider & Slash VFX to "Slash Run" Behavior Action
+- [Add] add Spell Ball VFX with VFX Graph and Shader Graph and trail VFX effects
+- [Bug] fix issu with shaders trails VFX : by pass Soft Particles block in Shader Graph
+- [Bug] fix issu with shaders VFX Graph : uncheck soft particles
 
 
 
