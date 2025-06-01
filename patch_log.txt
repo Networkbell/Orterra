@@ -984,7 +984,19 @@ Version actuelle : Prototype
 - [Bug] fix issu with shaders trails VFX : by pass Soft Particles block in Shader Graph
 - [Bug] fix issu with shaders VFX Graph : uncheck soft particles
 
-
+0.0.73 : Manas Orbs Misc Hud Improvement
+- [Bug] fix issu with load player scene when save location is 0 (test mode)
+- [Test] Test Build of the game : success
+- [Update] changes the orb handler scripts from 3 mana to 4 and adjusts the various mana costs
+- [Update] change the handler of mana orb to a sequential system instead of using them all at once
+- [Bug] fix issu with the order of sequential mana orb : in 1 to 4 / out 4 to 1
+- [Update] simplifies scripts in SaveData for managing the mana orbs (4 float inputs into 1 int)
+- [Add] adds the 5 mana orb color system in the UI with Update and save/load data image color
+- [Graph] improve design of the Mana Hud Misc background and create 5 versions for orbs manas
+- [Graph] create the 5 colors of fill manas orbs (white, black, green, red, blue)
+- [Graph] improves the transparent mana orb ball: full and half
+- [Graph] create the 5 colors of empty manas orbs and adjust position with new hud misc
+- [Add] new system to change the mana hud misc depending on the number of mana orb slots
 
 
 
