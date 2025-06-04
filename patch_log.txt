@@ -998,7 +998,15 @@ Version actuelle : Prototype
 - [Graph] create the 5 colors of empty manas orbs and adjust position with new hud misc
 - [Add] new system to change the mana hud misc depending on the number of mana orb slots
 
-
+0.0.74 : Active Mana Orb to Main Mana UI
+- [Graph] created the 5 color backgrounds of the main mana orb
+- [Graph] change the black mana orb (background orb main, orb fill, orb empty) to purple color
+- [Graph] add blank grey mana background of the main mana orb for default situation
+- [Bug] fix issu with the initialization of the default color orb (awake in white)
+- [Bug] fix major issu with order of updating color orbs after activating correct mana orb handler
+- [Bug] fix issu with activating mana orb cost to match spell cost
+- [Add] add system to change color of the main Mana depending on the color of active Mana orb
+- [Graph] improve the background main mana orb colors and adjust luminosity of mana orbs
 
 
 
