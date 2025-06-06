@@ -1007,7 +1007,16 @@ Version actuelle : Prototype
 - [Bug] fix issu with activating mana orb cost to match spell cost
 - [Add] add system to change color of the main Mana depending on the color of active Mana orb
 - [Graph] improve the background main mana orb colors and adjust luminosity of mana orbs
+- [Graph] created the different arrows (white) with blurred transparent effect to select the active orb
+- [Add] generic system to select the correct arrow depending on the active orb for the 4 mana huds
 
+0.0.75 : Arrow Mana Orbs + Transition Orb Consuming
+- [Add] adds active orb mana arrows to the hud with 3, 2 and 1 orb
+- [Add] add color arrow orb depending to color form active orb mana
+- [Update] adjusts all colors, all orbs positions, change the pink orb to purple and improve orb scripts
+- [Add] add progressive animation effect when filling the main mana hud after consuming orb
+- [Add] add smooth color fade transition between main mana backgrounds during refill
+- [Add] add progressive animation effect when filling the orb active when is consuming
 
 
 
