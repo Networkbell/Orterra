@@ -1017,6 +1017,33 @@ Version actuelle : Prototype
 - [Add] add progressive animation effect when filling the main mana hud after consuming orb
 - [Add] add smooth color fade transition between main mana backgrounds during refill
 - [Add] add progressive animation effect when filling the orb active when is consuming
+- [Add] disables mana orb arrows in the inventory menu and re-enables them in games
+- [Graph] new banner at the top of the inventory menu
+- [Add] activates mana orbs in the Inventory Menu based on backend mana orb slots
+
+0.0.76 : Menu Mana Orbs Installable
+- [Update] change scripts for initialization of default color orb with no orbs when no save data
+- [Update] change filled orb backend from int data to bool data
+- [Add] color mana orbs in the Inventory Menu based on backend mana color orb
+- [Add] add scroll view interaction of orb mana on button orb and item description on hover orb
+- [Add] backend system SaveData installing mana orb item (index color and value number)
+- [Graph] new background menu UI for Installed Orbs
+- [Add] Installed Orbs table menu frontend with dynamic orb installation reminder
+- [Add] dynamic menu Installed Orbs depending to backend installing mana orb item
+- [Update] Optimization scripts for centralized management of installed mana orbs
+- [Add] Add system that allows to install orb by clicking on table of installable orbs
+- [Bug] Fixes various interaction-selection bugs with the orb table buttons eventsystem
+- [Add] added system updating installed (or not) status in mana orb installable table
+- [Add] adds the ability to disable an installed orb and updates the UI and backend
+
+
+
+
+
+
+
+
+
 
 
 
