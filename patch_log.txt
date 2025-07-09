@@ -1036,7 +1036,21 @@ Version actuelle : Prototype
 - [Add] added system updating installed (or not) status in mana orb installable table
 - [Add] adds the ability to disable an installed orb and updates the UI and backend
 
-
+0.0.77 : Mana Orb Items with Texts
+- [Bug] Fixed orb install/removal to maintain empty slots position without automatic compaction
+- [Add] Auto orb compaction system with empty slots removed when closing menus
+- [Update] added validation for orb colors and arrows & optimized SaveData integration
+- [Add] added ManaOrbItem script to handle mana orb with UI dynamic handler detection
+- [Add] created ManaOrbItem prefab with OrbsText scriptable objects for all color variants
+- [Bug] fixed mana color synchronization bug where main mana display remained blank after orb fill
+- [Bug] fix issue where empty white orbs appeared by default when loading a game with no orb
+- [Bug] fix default white orb display in inventory when no orbs are installed.
+- [Bug] fixed orb installation menu remaining visible when exiting inventory screen
+- [Add] new system to display information to equipped orbs in inventory slot orb hud
+- [Update] optimize description scripts & add description orb system to install orb menu
+- [Bug] fix initialization delay to ensure inventory descriptions display correctly on first menu open
+- [Update] unified item description system by converting all OrbsText components to use SkillText
+- [Bug] fix hover event for orb installation buttons by registering them with MenuInventoryManager
 
 
 
