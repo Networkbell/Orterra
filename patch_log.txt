@@ -1052,9 +1052,28 @@ Version actuelle : Prototype
 - [Update] unified item description system by converting all OrbsText components to use SkillText
 - [Bug] fix hover event for orb installation buttons by registering them with MenuInventoryManager
 
+0.0.78 : Passive / Transfert Orb Effects System
+- [Add] implemented passive and transfer effects for each mana orb color
+- [Add] active orb-only bonus system with spell cost, damage, defense, and healing multipliers
+- [Add] transfer effects: full mana restore, healing, invincibility, frenzy mode, and AOE attacks
+- [Update] integrated PassiveOrbEffects with PlayerController for seamless gameplay effect apply
+- [Add] comprehensive debug tools with Unity Inspector context menus for testing and balancing
+- [Update] green orb replaced heal-on-parry with heart regeneration + transfer heals 50% max hearts
+- [Update] blue orb replaced damage reduction with shield system with blocks 1 hit/10s 
+- [Bug] Fixed inconsistent orb compacting between installation and inventory menus
+- [Add] add OrbsText scriptable objects for empty blank orb and adjust gameobjets
 
-
-
+0.0.79 : Unity 6 – Cinemachine 3 - Mobile Platform
+- [Update] Unity 5 to Unity 6 : corrections scripts, obsolete functions, errors…
+- [Update] Cinemachine 2 to Cinemachine 3 : corrections scripts, obsolete functions, errors…
+- [Bug] fix unity 6 conversion errors with Localization Adressables
+- [Bug] fix unity 6 conversion errors with TextMeshPro Bindings Inputs
+- [Bug] fix cinemachine 3 conversion errors with biasX camera target script
+- [Bug] fix cinemachine 3 conversion errors with offset camera target script
+- [Bug] fix cinemachine 3 conversion errors with confiner composite bound
+- [Add] platform mobile scripts and prefab (horizontal and vertical)
+- [Bug] fix issu with horizontal/vertical velocity platform with player moving velocity
+- [Bug] fix issu with horizontal/vertical velocity platform with player jumping velocity
 
 
 
@@ -1070,3 +1089,4 @@ Known Bugs :
 -	rebind with mouse no run
 -	rebind menu azerty-qwerty instability
 -	rebind inventory control from menu
+
