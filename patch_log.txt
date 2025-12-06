@@ -1075,6 +1075,15 @@ Version actuelle : Prototype
 - [Bug] fix issu with horizontal/vertical velocity platform with player moving velocity
 - [Bug] fix issu with horizontal/vertical velocity platform with player jumping velocity
 
+0.0.80 : Temple3 Sprite Asset + Pressure Plate
+- [Update] adjust binding system for add Node Asset with orb skill items & description TextMeshPro
+- [Add] Levelling Game Design of Temple3 in Whitebox (collisions + platform + doors...)
+- [Update] adjusts SaveMachine script generically to allow saving with items (SaveItem)
+- [Update] adjusts inventory description script based on progress using an alternative scObject
+- [Graph] New Leveling Game Sprite Asset : Black Gold Temple (wall, ground, back, floor...)
+- [Add] Pressure Plate generic adaptative system (script & prefab & sprite)
+- [Update] adjust pressure plate system for once activation option with SaveData integration
+- [Update] adjust pressure plate system for balling activation and balling sprite/collision
 
 
 
@@ -1089,4 +1098,5 @@ Known Bugs :
 -	rebind with mouse no run
 -	rebind menu azerty-qwerty instability
 -	rebind inventory control from menu
+
 
