@@ -1085,6 +1085,23 @@ Version actuelle : Prototype
 - [Update] adjust pressure plate system for once activation option with SaveData integration
 - [Update] adjust pressure plate system for balling activation and balling sprite/collision
 
+0.0.81 : Bohrop Enemy Graph/Anim & Update 3D Guide Workflow & Update Behavior Tree System
+- [Graph] New best uniform method for 3D mesh-texture asset creation [Blender]
+- [Update] uniformization method Guide Workflow Blender preset render & update to Blender 5.0
+- [Graph] new mesh-texture 3D asset for Georob and Terrion [Blender]
+- [Graph] new enemy mesh-texture 3D : Borhop [Blender]
+- [Graph] update texture UV for Volutus and Craroc [Photoshop]
+- [Graph] polish mesh-bone-squeleton for Borhop pre-animation [Blender]
+- [Bug] fix the ancient and infamous A-T Position problem with Mixamo import-export [Blender]
+- [Update] uniformization method Guide Workflow autorig & anim with Mixamo <-> Blender
+- [Graph] create Borhop 3D animation and adjust keys (idle, turn, walk, death, hit, attack) [Blender]
+- [Graph] generate render 2D sprite sheet optimized atlas of all Borhop animation (new method)
+- [Update] decoupled CoreEnemy script, broadcasted anim events generically and update actions
+- [Add] animation, animator, collider, behavior tree, states integration to Borhop enemy in Unity
+- [Add] new IdleBool action behavior with complete random wait and loop integration
+- [Graph] adjust/recreate real Turn animation for best flip symmetry with Borhop [Blender]
+- [Update] adjust behavior/animator with real turning flip, simple idle turning & FacePlayer
+- [Add] new Jump action behavior for Borhop and update JumpAttack animation for best integration
 
 
 
@@ -1098,5 +1115,6 @@ Known Bugs :
 -	rebind with mouse no run
 -	rebind menu azerty-qwerty instability
 -	rebind inventory control from menu
+
 
 
